@@ -7,7 +7,7 @@ This is an edit of [Shadcn's Next template](https://github.com/shadcn-ui/next-te
 ## Usage
 
 ```bash
-npx create-next-app -e https://github.com/inbestigator/Next-Website-Template
+npx create-next-app -e https://github.com/inbestigator/next-website-template
 ```
 
 ## Features

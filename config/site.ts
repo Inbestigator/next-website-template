@@ -1,18 +1,23 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Website name",
-  description: "Site description",
+  name: "Next Template",
+  description:
+    "A Next.js 13 template for building apps with Radix UI and Tailwind CSS",
+  footer: "Built by Inbestigator.",
   mainNav: [
     {
-      title: "Home",
-      href: "/",
+      title: "Nextjs",
+      href: "https://nextjs.org/",
       external: true,
-    }
+    },
+    {
+      title: "Shadcn UI",
+      href: "https://ui.shadcn.com",
+      external: true,
+    },
   ],
   links: {
-    twitter: "https://twitter.com/",
-    github: "https://github.com/inbestigator/website-template",
-    docs: "/docs",
+    github: "https://github.com/inbestigator/next-website-template",
   },
 }

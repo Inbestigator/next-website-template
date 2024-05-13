@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
+import BentoGrid from "@/components/ui/bento-grid"
 import { buttonVariants } from "@/components/ui/button"
 import {
   Card,
@@ -15,22 +16,29 @@ export default function IndexPage() {
       <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
         <div className="flex max-w-[980px] flex-col items-start gap-2">
           <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-            Header line one <br className="hidden sm:inline" />
-            Header line two
+            This website template was made using Next.js and Shadcn UI
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Shadcn&apos;s components are beautifully designed using Radix UI and
+            Tailwind CSS.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           <Link
-            href="/login"
             target="_blank"
             rel="noreferrer"
+            href="https://nextjs.org/"
             className={buttonVariants()}
           >
-            Login
+            Nextjs
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href="https://ui.shadcn.com"
+            className={buttonVariants()}
+          >
+            Shadcn UI
           </Link>
           <Link
             target="_blank"
@@ -42,14 +50,28 @@ export default function IndexPage() {
           </Link>
         </div>
       </section>
-      <section className="container mx-auto flex flex-col items-center justify-between">
-        <Card className="m-4 w-full">
+      <BentoGrid className="md:grid-cols-2">
+        <Card className="md:col-span-2">
           <CardHeader>
-            <CardTitle>We&apos;re doing it better</CardTitle>
-            <CardDescription>Here&apos;s why...</CardDescription>
+            <CardTitle>Card</CardTitle>
+            <CardDescription>
+              Displays a card with header, content, and footer.
+            </CardDescription>
           </CardHeader>
         </Card>
-      </section>
+        <Card className="md:col-span-1">
+          <CardHeader>
+            <CardTitle>Lorem ipsum</CardTitle>
+            <CardDescription>Something heartwhelming</CardDescription>
+          </CardHeader>
+        </Card>
+        <Card className="md:col-span-1">
+          <CardHeader>
+            <CardTitle>Dolor sit</CardTitle>
+            <CardDescription>Something silly</CardDescription>
+          </CardHeader>
+        </Card>
+      </BentoGrid>
     </>
   )
 }

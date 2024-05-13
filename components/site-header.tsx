@@ -5,6 +5,7 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
+
 import { MobileNav } from "./mobile-nav"
 
 export function SiteHeader() {
@@ -28,21 +29,6 @@ export function SiteHeader() {
               >
                 <Icons.gitHub className="size-5" />
                 <span className="sr-only">GitHub</span>
-              </div>
-            </Link>
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className={buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })}
-              >
-                <Icons.twitter className="size-5 fill-current" />
-                <span className="sr-only">Twitter</span>
               </div>
             </Link>
             <ThemeToggle />
