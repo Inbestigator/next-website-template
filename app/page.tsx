@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import Grid from "@/components/grid"
+import InstallCard from "@/components/install-card"
 
 export default function IndexPage() {
   return (
@@ -54,7 +55,9 @@ export default function IndexPage() {
             GitHub
           </Link>
         </div>
+        <InstallCard />
       </section>
+
       <BentoGrid className="md:grid-cols-3">
         <Card className="md:col-span-2">
           <CardHeader>
