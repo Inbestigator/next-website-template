@@ -1,6 +1,6 @@
 # NextJS website template
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS
+A Next.js 14 template for building apps with Radix UI and Tailwind CSS
 
 This is an edit of [Shadcn's Next template](https://github.com/shadcn-ui/next-template)
 
@@ -12,7 +12,7 @@ npx create-next-app -e https://github.com/inbestigator/next-website-template
 
 ## Features
 
-- Next.js 13 App Directory
+- Next.js 14 App Directory
 - Radix UI Primitives
 - Tailwind CSS
 - [Shadcn UI](https://ui.shadcn.com) components
